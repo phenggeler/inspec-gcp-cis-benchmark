@@ -57,6 +57,7 @@ It is recommended to have effective default audit config configured in such a wa
   ref 'GCP Docs', url: 'https://cloud.google.com/logging/docs/audit/configure-data-access'
 
   describe google_project_logging_audit_config(project: gcp_project_id) do
+    its('defualt_types') { should include 'ADMIN_WRITE' }
     its('default_types') { should include 'DATA_READ' }
     its('default_types') { should include 'DATA_WRITE' }
     it { should_not have_default_exempted_members }
