@@ -36,6 +36,7 @@ control "cis-gcp-#{control_id}-#{control_abbrev}" do
   tag cis_version: cis_version.to_s
   tag project: gcp_project_id.to_s
   tag nist: ['AC-2']
+  tag cjis: ['5.5.1']
 
   ref 'CIS Benchmark', url: cis_url.to_s
   ref 'GCP Docs', url: 'https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations#use_corporate_login_credentials'

@@ -49,6 +49,7 @@ in the bucket is publicly accessible either."
   tag cis_version: cis_version.to_s
   tag project: gcp_project_id.to_s
   tag nist: ['AC-3']
+  tag cjis: ['5.5.2', '5.5.2.2', '5.5.2.3', '5.5.2.3', '5.6.1.1', '5.6.3.1', '5.10.3', '5.10.3.1']
 
   ref 'CIS Benchmark', url: cis_url.to_s
   ref 'GCP Docs', url: 'https://cloud.google.com/storage/docs/uniform-bucket-level-access'

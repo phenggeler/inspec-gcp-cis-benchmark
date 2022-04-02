@@ -37,7 +37,7 @@ inputs:
     required: true
     value: 'aaa-bbb-ccc-ddd'
 
-  - name: cis_version
+  - name: cjis_version
     description: "The short version of the GCP CIS Benchmark"
     value: "1.2"
     type: String
